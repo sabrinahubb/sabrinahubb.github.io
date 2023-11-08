@@ -149,7 +149,7 @@
     position: relative;
     align-self: stretch;
     width: 100%;
-    background-color: var(--white);
+    background-color: #9ecbffa1;
 }
 
 .home .latest-work {
