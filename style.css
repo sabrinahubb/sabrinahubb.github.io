@@ -4,6 +4,9 @@
     align-items: center;
     position: relative;
     background-color: #ffffff;
+    width: fit-content;
+    height: auto;
+
 }
 
 .home .navigation {
@@ -149,7 +152,9 @@
     position: relative;
     align-self: stretch;
     width: 100%;
+    box-shadow: 2px 2px 5px #999;
     background-color: #9ecbffa1;
+
 }
 
 .home .latest-work {
@@ -187,6 +192,13 @@
     position: relative;
     flex: 1;
     flex-grow: 1;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 5px #999;
+
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 20px;
+
 }
 
 .home .image {
