@@ -1,76 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Dohickey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4; /* Lighter background */
+        }
+
+        .navbar {
+            background-color: #333; /* Darker navbar */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 7px;
+        }
+
+        .navbar a {
+            color: white; /* Light text on dark bg */
+            text-decoration: none;
+            padding: 7px;
+        }
+
+        .navbar a:hover {
+            background-color: #555; /* Hover effect */
+            color: white;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #f0f0f0; /* A light grey background */
+        }
+
+        .team-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .team-image img {
+            max-width: 400px; /* Adjusted image size */
+            margin-right: 20px; /* Spacing between image and text */
+            border: 3px solid #333; /* Border for images */
+            border-radius: 10px; /* Rounded corners for images */
+        }
+
+        .team-content {
+            margin-left: 20px; /* Spacing between image and text */
+        }
+
+        .team-heading {
+            background-color: #9ecbffa1; /* Light blue background */
+            padding: 20px 0;
+            color: #000;
+            text-align: center;
+        }
+
+        .members {
+            display: flex;
+            justify-content: space-around;
+            background-color: #9ecbffa1; /* Blue background for the team members */
+            padding-bottom: 20px;
+        }
+
+        .member {
+            border: 2px solid #ffffff; /* White border for contrast */
+            border-radius: 15px; /* Rounded corners */
+            padding: 10px;
+            width: calc(33% - 20px); /* Three items per row, accounting for margin */
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+            background-color: #fff; /* White background for the cards */
+            text-align: center; /* Centering text */
+        }
+
+        .member img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px; /* Rounded corners for images */
+            border: 3px solid #333; /* Border for images */
+            border-radius: 10px; /* Rounded corners for images */
+        }
+
+        .member-info {
+            text-align: left;
+            padding: 5px;
+        }
+
+        .member-info h3 {
+            margin-top: 5px;
+        }
+
+        .member-info p {
+            margin: 5px 0;
+        }
+
+        .member-info .email {
+            word-break: break-all; /* Prevents long email addresses from overflowing */
+        }
+    </style>
 </head>
 <body>
 
-<div class="home">
-    <div class="navigation">
-        <div class="login"><a style="text-decoration:none" href="index.html">Login</a></div>
-        <div class="navbar">
-            <div class="text-wrapper"><a style="text-decoration:none" href="index.html">Home</a></div>
-            <div class="text-wrapper"> <a style="text-decoration:none" href="projects.html">Projects</a></div>
-
-            <div class="text-wrapper"> <a style="text-decoration:none" href="sabrina.html">Sabrina</a></div>
-            <div class="text-wrapper"> <a style="text-decoration:none" href="diego.html">Diego</a></div>
-            <div class="text-wrapper"> <a style="text-decoration:none" href="max.html">Max</a></div>
-        </div>
+<div class="navbar">
+    <a href="#">Login</a>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Sabrina</a>
+        <a href="#">Diego</a>
+        <a href="#">Max</a>
     </div>
-    <div class="header-section">
-        <div class="header-content">
-            <div class="title-subtitle">
-                <div class="div"></div>
-                <div class="visual-designer">Team Dohickey</div>
-                <p class="this-team-is">This team is comprised of three Electrical Engineering majors.</p>
-            </div>
-        </div>
-        <img class="headerimage" src="img/headerimage-1.png" />
-    </div>
-    <div class="gallery-section">
-        <div class="latest-work">Meet the Team</div>
-        <div class="cards-section">
-            <div class="div-2">
-                <img class="image" src="pictures/PXL_20220712_010703251.MP.jpg" />
-                <div class="title-description">
-                    <div class="div">Sabrina</div>
-                    <p class="UI-art-drection">
-                        Major : Electrical Engineering<br />Focus : Project Management<br />Skills : C++, Data Analysis<br />Interests
-                        : Alternative Fitness<br />Email : sahubbard@uiowa.edu
-                    </p>
-                </div>
-            </div>
-            <div class="div-2">
-                <img class="image" src="pictures/IMG-20231106-WA0000.jpg" />
-                <div class="title-description">
-                    <div class="div">Diego</div>
-                    <p class="UI-art-drection">
-                        Major : Electrical Engineering<br />Focus : Power Systems<br />Skills : Circuit Design<br />Interests
-                        : Welding, Bikes<br />Email : maximelio-finch@uiowa.edu
-                    </p>
-                </div>
-            </div>
-            <div class="div-2">
-                <img class="image" src="pictures/IMG-20231106-WA0002.jpg" />
-                <div class="title-description">
-                    <div class="div">Max</div>
-                    <p class="UI-art-drection">
-                        Major : Electrical Engineering<br />Focus : Robotics<br />Skills : Python<br />Interests : Robots<br />Email
-                        : diego-rivera@uiowa.edu
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="commentbox"></div>
-    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-    <script>commentBox('5708360393424896-proj')</script>
 </div>
-</body>
-<script src="prop.js"></script>
-</html>
 
+<div class="container">
+    <div class="team-section">
+        <div class="team-image">
+            <a href="#"><img src="image1-placeholder.jpg" alt="Team Image 1"></a>
+        </div>
+        <div class="team-content">
+            <div class="team-name">
+                <h1>Team Dohickey</h1>
+            </div>
+            <div class="team-description">
+                <p>This team is comprised of Electrical Engineering majors.</p>
+            </div>
+        </div>
+    </div>
+    <div class="team-heading">
+        <h2>Meet the Team</h2>
+    </div>
+    <div class="members">
+        <!-- Member 1 -->
+        <div class="member">
+            <a href="#"><img src="pictures/PXL_20220712_010703251.MP.jpg" alt="Team Member Image 2"></a>
+            <div class="member-info">
+                <h3>Sabrina</h3>
+                <p>Major: Electrical Engineering</p>
+                <p>Focus: Project Management</p>
+                <p>Skills: C++, Data Analysis</p>
+                <p>Interests: Alternative Fitness</p>
+                <p class="email">Email: sahubbard@uiowa.edu </p>
+            </div>
+        </div>
+        <!-- Member 2 -->
+        <div class="member">
+            <a href="#"><img src="image3-placeholder.jpg" alt="Team Member Image 3"></a>
+            <div class="member-info">
+                <h3>Name</h3>
+                <p>Major: Electrical Engineering</p>
+                <p>Focus: Power Systems</p>
+                <p>Skills: Circuit Design</p>
+                <p>Interests: Welding, Bikes</p>
+                <p class="email">Email: diego-rivera@uiowa.edu</p>
+            </div>
+        </div>
+        <!-- Member 3 -->
+        <div class="member">
+            <a href="#"><img src="pictures/IMG-20231106-WA0000.jpg" alt="Team Member Image 4"></a>
+            <div class="member-info">
+                <h3>Name</h3>
+                <p>Major: Electrical Engineering</p>
+                <p>Focus: Robotics</p>
+                <p>Skills: Python</p>
+                <p>Interests: Robots</p>
+                <p class="email">Email: maximelio-finch@uiowa.edu</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
