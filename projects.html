@@ -1,22 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Overview</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4; /* Lighter background */
+        }
+        .navbar {
+            background-color: #333; /* Darker navbar */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 7px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Slight shadow for depth */
+        }
 
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Projectts</title>
+        .navbar a {
+            color: white; /* Light text on dark bg */
+            text-decoration: none;
+            padding: 7px;
+        }
+
+        .navbar a:hover {
+            background-color: #555; /* Hover effect */
+            color: white;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .content {
+            padding: 20px;
+        }
+        .lab-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .lab-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .lab-image img, .final-image img {
+            width: 100%; /* Adjust as needed for layout */
+            max-width: 400px; /* Adjust as needed for  layout */
+            height: auto; /* Keeps the aspect ratio */
+            border: 3px solid #333; /* Border for images */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+        }
+        .lab-description {
+            margin-bottom: 40px;
+        }
+        .lab-description.left-aligned {
+            text-align: left;
+            margin-left: 30px;
+        }
+        .lab-description.right-aligned {
+            text-align: center;
+            margin-right: 40px;
+        }
+        .final-project {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .final-image img {
+            max-width: 600px; /* Adjust as needed for layout */
+        }
+    </style>
+
 </head>
 <body>
-<div class="navigation">
-    <div class="logo">Login</div>
-    <div class="navbar">
-        <div class="text-wrapper">Home</div>
-        <div class="text-wrapper">Projects</div>
-        <div class="text-wrapper">Sabrina</div>
-        <div class="text-wrapper">Diego</div>
-        <div class="text-wrapper">Max</div>
+
+<div class="navbar">
+    <a href="#">Login</a>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Sabrina</a>
+        <a href="#">Diego</a>
+        <a href="#">Max</a>
     </div>
 </div>
+
+<div class="content">
+    <div class="lab-section">
+        <h1>Lab 1: Web-Connected Thermometer</h1>
+        <div class="lab-images">
+            <div class="lab-image"><img src="pictures/sdlab1pic1schematic.png" alt="Lab 1 Schematic"></div>
+            <div class="lab-image"><img src="pictures/sdlab1pic2Device.jpg" alt="Lab 1 Device"></div>
+        </div>
+        <div class="lab-description left-aligned">
+            <h2>About this lab</h2>
+            <p>In the Web-Connected Thermometer project, our objective was to create a sophisticated temperature monitoring system that offers both real-time data visualization and user-friendly interaction. At the headt of hour device is the Raspberry Pi Pico (Pico W), complemented by the high-resolution Pimoroni Display (PIM543) and the prevision-driver DS18S20 1-Wire Digital Thermometer. To enhance user experience and provide remote access capabilities, we devloped a web interface using React, with the coding environment facilitated by Visual Studio Code. The software foundation for this project was built upon CircuitPython for the hardware components and JavaScript for the web interface.</p>
+        </div>
+    </div>
+
+    <div class="lab-section">
+        <h1>Lab 2: Electric Eye Light Beam-Interrupter Safety System</h1>
+        <div class="lab-images">
+            <div class="lab-image"><img src="pictures/sdlab2pic1breakdown.png" alt="Lab 2 Transmitter"></div>
+            <div class="lab-image"><img src="pictures/sdlab2pic2Breadboard.jpg" alt="Lab 2 Receiver"></div>
+        </div>
+        <div class="lab-description right-aligned">
+            <h2>About the lab</h2>
+            <p>The purpose of  the electric eye light beam-interrupter safety system lab is to design, develop, and test a novel safety system aimed at reliably detecting, and responding to physical obstructions in a given environment. This project addresses a critical real-world problem wherein accurate and dependable sensor data are essential for ensuring the safety and functionality of various aplications. The system consists of a transmitter, which emits a modulated infrared (IR) beam, and a receiver, which detects interruptions in the beam and triggers an alert. Through a comprehensive exploration of design choices, experimentation, and testing, this report provides insights into the development of a safety system that performs effectively under diverse lighting conditions, while also incorporating an SMS alert feature.</p>
+        </div>
+    </div>
+
+    <div class="lab-section">
+        <h1>Lab 3: Portfolio Website</h1>
+        <p>The purpose of this website, which we had to develop and host for the public to see. Our main skills honed here are being able to go through tutorials and learn how to do new things, as all of our team members are exclusively electrical engineers.</p>
+        <div class="lab-image"><img src="pictures/sdlab3pic1.jpg" alt="Lab 3 Website Screenshot"></div>
+    </div>
+
+    <div class="final-project">
+        <h1>Final Project</h1>
+        <p>The purpose of our final project is</p>
+        <div class="final-image"><img src="image6-placeholder.jpg" alt="Final Project Image"></div>
+    </div>
+</div>
+
 </body>
 </html>
