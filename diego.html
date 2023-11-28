@@ -1,29 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diego's Page</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Lighter background */
+  }
+  .navbar {
+    background-color: #333; /* Darker navbar */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Slight shadow for depth */
+  }
 
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Diego Rivera - Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  .navbar a {
+    color: white; /* Light text on dark bg */
+    text-decoration: none;
+    padding: 7px;
+  }
+
+  .navbar a:hover {
+    background-color: #555; /* Hover effect */
+    color: white;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  .container {
+    padding: 20px;
+  }
+  .heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start; /* Aligns items to the top of the row */
+  }
+
+  .column {
+    flex: 1;
+    padding: 10px;
+    display: flex; /* Makes column a flex container */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start; /* Aligns items to the top */
+  }
+
+  .column img {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 400px; /* Limiting the maximum width */
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .column-text h2 {
+    margin-bottom: 10px;
+
+  }
+  .column-text p {
+    text-align: justify;
+  }
+  .work-experience {
+    flex-grow: 2;
+  }
+  .align-right {
+    text-align: right;
+    justify-content: flex-end; /* Aligns the image to the bottom of the column */
+  }
+
+  .align-right img {
+    width: 100%;
+    max-width: 400px; /* Adjusted to suit the image size */
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin-left: 310px;
+  }
+</style>
 </head>
 <body>
-<div class="navigation">
-    <div class="login"><a style="text-decoration:none" href="index.html">Login</a></div>
-    <div class="navbar">
-        <div class="text-wrapper"><a style="text-decoration:none" href="index.html">Home</a></div>
-        <div class="text-wrapper"> <a style="text-decoration:none" href="projects.html">Projects</a></div>
-        <div class="text-wrapper"> <a style="text-decoration:none" href="sabrina.html">Sabrina</a></div>
-        <div class="text-wrapper"> <a style="text-decoration:none" href="diego.html">Diego</a></div>
-        <div class="text-wrapper"> <a style="text-decoration:none" href="max.html">Max</a></div>
-    </div>
+
+<div class="navbar">
+  <a href="#">Login</a>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="sabrina.html">Sabrina</a>
+    <a href="diego.html">Diego</a>
+    <a href="max.html">Max</a>
+  </div>
 </div>
-<section id="about">
-    <h2>About Me</h2>
-    <p>My name is John Doe, and I'm a web developer based in San Francisco.
-        I specialize in creating responsive websites that are optimized for mobile devices.</p>
-</section>
+
+<div class="container">
+  <div class="heading">Diego</div>
+  <div class="row">
+    <div class="column column-text">
+      <h2>About me</h2>
+      <p>Hi, my name is Diego Rivera, and I am currently in my senior year at the University of Iowa studying Electrical Engineering with a focus in Power Systems.</p>
+    </div>
+    <div class="column">
+      <img src="image1-placeholder.jpg" alt="About Diego">
+    </div>
+    <div class="column column-text">
+      <h2>Hobbies</h2>
+      <p>If I’m not on my bike I’m usually out running, listening to music, welding, or working on a circuit. All of these things have played an integral role in shaping my identity.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column column-text work-experience">
+      <h2>Work Experience</h2>
+      <p>Sed sit amet mollis ligula, ut pulvinar neque. Proin magna risus, varius quis auctor vitae, sodales sed turpis.</p>
+    </div>
+    <div class="column">
+      <img src="image2-placeholder.jpg" alt="Work Experience">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column column-text work-experience">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div class="column">
+      <img src="image3-placeholder.jpg" alt="Additional Information">
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
