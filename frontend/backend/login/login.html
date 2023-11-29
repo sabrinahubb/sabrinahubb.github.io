@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- added the CSS file for styling the login page   -->
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form class="login-form" id="loginForm">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <button type="button" onclick="submitLoginForm()">Login</button>
+        </div>
+      </form>
+      <p>
+        Don't have an Account?
+        <a href="../registration/registration.html">Register Now</a>
+      </p>
+    </div>
+
+    <!-- added the login.js file for the login functionally  -->
+    <script src="login.js"></script>
+  </body>
+</html>

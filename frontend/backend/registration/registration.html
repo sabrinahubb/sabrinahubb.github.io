@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <!-- added the registration CSS page for the styling the registration page  -->
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <div class="registration-container">
+      <h2>Create an account</h2>
+      <form class="registration-form" id="registrationForm">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button type="button" onclick="submitRegisterFrom()">Register</button>
+        </div>
+      </form>
+      <p>
+        Have an Account?
+        <a href="../login/login.html">Login Now</a>
+      </p>
+    </div>
+
+    <!-- added the registration.js file for the registration functionally  -->
+    <script src="registration.js"></script>
+  </body>
+</html>
