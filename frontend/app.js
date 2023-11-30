@@ -7,7 +7,7 @@ if (accountStatus === "logged") {
   logoutButton.className = "loginButton";
   logoutButton.addEventListener("click", function () {
     localStorage.removeItem("account");
-    window.location.href = "backend/login/loginnot.html";
+    window.location.href = "frontend/backend/login/login.html";
   });
   loginButtonsContainer.appendChild(logoutButton);
 } else {
@@ -15,7 +15,7 @@ if (accountStatus === "logged") {
   loginButton.textContent = "Login";
   loginButton.className = "loginButton";
   loginButton.addEventListener("click", function () {
-    window.location.href = "backend/login/loginnot.html";
+    window.location.href = "frontend/backend/login/login.html";
   });
   loginButtonsContainer.appendChild(loginButton);
 }

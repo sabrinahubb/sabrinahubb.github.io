@@ -8,9 +8,9 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 //  Connection to MongoDB
-// ******note****** Update URL as  mongodb database name and password
+// ******note* Update URL as  mongodb database name and password
 mongoose.connect(
-    "mongodb+srv://Javlaba:<password>@cluster0.up3qtp3.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://Javlaba:z%23m6n4gP.XPUBq@cluster0.up3qtp3.mongodb.net/?retryWrites=true&w=majority",
   //"mongodb+srv://Javlaba:dm4K7rehXMn3eQvt@cluster0.jh6lsci.mongodb.net/test?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
@@ -82,3 +82,5 @@ app.post("/login", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+//console.log(mongoose.connection.readyState);
