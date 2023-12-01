@@ -33,7 +33,18 @@ if (accountStatus === "logged") {
     event.preventDefault();
     alert("You need to log in to access this page.");
     window.location.href = "./backend/login/login.html";
+
+    // Show the pop-up
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
   });
+
+// Hide the pop-up when it's clicked
+  document.getElementById('popup').addEventListener('click', function() {
+    this.style.display = 'none';
+  });
+
+
 }
 
 // Import the functions you need from the SDKs you need
