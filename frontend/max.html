@@ -1,236 +1,146 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diego's Page</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Lighter background */
+  }
+  .navbar {
+    background-color: #333; /* Darker navbar */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Slight shadow for depth */
+  }
 
-  <meta charset="UTF-8">
+  .navbar a {
+    color: white; /* Light text on dark bg */
+    text-decoration: none;
+    padding: 7px;
+  }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  .navbar a:hover {
+    background-color: #555; /* Hover effect */
+    color: white;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  .container {
+    padding: 20px;
+  }
+  .heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start; /* Aligns items to the top of the row */
+  }
 
-  <!-- Tailwind CSS via CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styleguide.css" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Maximelio Finch - Portfolio</title>
+  .column {
+    flex: 1;
+    padding: 10px;
+    display: flex; /* Makes column a flex container */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start; /* Aligns items to the top */
+  }
 
+  .column img {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 350px; /* Limiting the maximum width */
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .column-text h2 {
+    margin-bottom: 10px;
+
+  }
+  .column-text p {
+    text-align: justify;
+  }
+  .work-experience {
+    flex-grow: 2;
+  }
+  .align-right {
+    text-align: right;
+    justify-content: flex-end; /* Aligns the image to the bottom of the column */
+  }
+
+  .align-right img {
+    width: 100%;
+    max-width: 300px; /* Adjusted to suit the image size */
+    border: 3px solid #333;
+    border-radius: 10px;
+    margin-left: 250px;
+  }
+</style>
 </head>
+<body>
 
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-
-
-
-
-<div class="navigation">
-  <div class="logo">Login</div>
-  <div class="navbar">
-    <div class="text-wrapper">Home</div>
-    <div class="text-wrapper"> <a href="projects.html">Projects</a></div>
-    <div class="text-wrapper">Sabrina</div>
-    <div class="text-wrapper">Diego</div>
-    <div class="text-wrapper">Max</div>
+<div class="navbar">
+  <a href="#">Login</a>
+  <div>
+    <a href="./index.html">Home</a>
+    <a href="./projects.html">Projects</a>
+    <a href="./sabrina.html">Sabrina</a>
+    <a href="./diego.html">Diego</a>
+    <a href="./max.html">Max</a>
   </div>
 </div>
+
+<div class="container">
+  <div class="heading">Diego</div>
+  <div class="row">
+    <div class="column column-text">
+      <h2>About me</h2>
+      <p>Hi, my name is Diego Rivera, and I am currently in my senior year at the University of Iowa studying Electrical Engineering with a focus in Power Systems.</p>
+    </div>
+    <div class="column">
+      <img src="../pictures/WhatsAppImageDiegoStanding.jpg" alt="About Diego">
+    </div>
+    <div class="column column-text">
+      <h2>Hobbies</h2>
+      <p>If I’m not on my bike I’m usually outrunning, listening to music, welding, or working on a circuit. All of these things have played an integral role in shaping my identity.</p>
+    </div>
   </div>
-
-</nav>
-
-
-
-<!-- About Me Section -->
-
-<section id="about" class="container mx-auto p-6 md:p-12">
-
-  <h2 class="text-3xl font-bold mb-4">About Me</h2>
-
-  <div class="flex flex-wrap">
-
-    <div class="w-full md:w-1/2">
-
-      <img src="../pictures/Maximelio-Finch-Headshot.jpg" alt="Your Name" class="rounded shadow-lg">
-
+  <div class="row">
+    <div class="column column-text work-experience">
+      <h2>Biking</h2>
+      <p>When it comes to bikes I’m obsessed. I spend quite a bit of my day to-day time on my bike exploring. I’ve biked in the mountains of Colorado to the bike parks of Arkansas and the trails in Wisconsin. Not only do I enjoy riding bikes, but I also really enjoy making them from scratch. I’ve spent the last two semesters, and a summer, learning to miter, weld, and design steel bicycle frames. This has given me a level of understanding that I never expected to know, but have thoroughly enjoyed learning.</p>
     </div>
-
-    <div class="w-full md:w-1/2 md:pl-6">
-
-      <p class="text-lg">
-
-        An Eagle Scout and a disciplined martial artist with a black belt in Shotokan Karate, my approach to engineering is 
-                grounded in precision and excellence. My professional experiences, such as being an undergraduate computer engineer for the TRACERS NASA 
-                Program and developing applications with Holo Reality Labs, reflect a commitment to 
-                leveraging emerging technologies to solve complex problems.
-
-      </p>
-      <p class="text-lg">
-        I am skilled in utilizing tools like OpenCV and TensorFlow, and I apply machine learning models to improve processes and products. As a member of the IEEE Robotics & Automation Society and a leader in the Robotics Club, I collaborate on and contribute to projects that push the boundaries of what's possible in robotics and automation.
-      </p>
-
-      <!-- Add more personal details or a brief story -->
-
+    <div class="column">
+      <img src="../pictures/WhatsAppDiegoBiking.jpg" alt="Biking">
     </div>
-
   </div>
-
-</section>
-
-
-
-<!-- Work Experience Section -->
-
-<section id="experience" class="bg-gray-100 py-8">
-
-  <h2 class="text-3xl font-bold mb-4">Work Experience</h2>
-
-  <div class="container mx-auto">
-
-    <!-- Job 1 -->
-
-    <div class="mb-4">
-
-      <h3 class="text-xl font-bold">Engineering Researcher</h3>
-
-      <p class="text-md">(09/2023) - Current</p>
-
-      <p>Actively developing a Unity-based eye exam application that addresses the challenges in aligning in-game measurement distances with real-life equivalents and ensuring the VR display resolution of eye exam letters accurately reflects eye prescription levels, thereby enhancing the precision and reliability of virtual reality eye assessments</p>
-
+  <div class="row">
+    <div class="column column-text work-experience">
+      <h2>Audio</h2>
+      <p> The original reason I began studying electrical engineering is because I wanted to design synthesizers, speakers, DACs, amplifiers, and preamplifiers. Basically the whole audio chain. A lot of my fascination with the electrical world is rooted in my connection to sound, signals, and how they manifest themselves in the real world. Music is very real, and personal, connection to electricity and I desired a deeper understanding of the magic that goes into audio signal reproduction. This was my gateway into the world of electricity, electromagnetics, microelectronics, and power systems.</p>
     </div>
-
-    <!-- This job isn't done yet!! (11/30/2023) job 2 -->
-
-    <div class="mb-4">
-
-      <h3 class="text-xl font-bold">Undergraduate Computer Engineer</h3>
-
-      <p class="text-md">(02/2023) - Current</p>
-
-      <p>Engineered a system focused on acquiring real-time temperature control data from a Thermal Control Unit (TCU) with Ethernet Modbus TCP using the Watlow F4T Process Controller.
-        Developed and currently maintaining Python software tools for teams to synchronize testing across equipment such as waveform generators and power supplies.
-        Utilized MATLAB and Raspberry Pi to display ADC outputs sent via SPI</p>
-
+    <div class="column">
+      <img src="../pictures/WhatsAppDiegoAudio.jpg" alt="Audio">
     </div>
-
-    <!-- Add more as needed -->
-
+    </div>
+<!--    <div class="column">-->
+<!--      <img src="image3-placeholder.jpg" alt="Additional Information">-->
+<!--    </div>-->
   </div>
-
-</section>
-
-
-
-<!-- Projects Section -->
-
-<section id="projects" class="container mx-auto p-6 md:p-12">
-
-  <h2 class="text-3xl font-bold mb-4">Projects</h2>
-
-  <div class="flex flex-wrap">
-
-    <!-- Project 1 -->
-
-    <div class="w-full md:w-1/2 lg:w-1/3 p-4">
-
-      <img src="path_to_project_image.jpg" alt="Project Name" class="rounded shadow-lg">
-
-      <h3 class="text-xl font-bold mt-2">Project Name</h3>
-
-      <p><!-- Brief description of the project --></p>
-
-    </div>
-
-    <!-- Project 2 -->
-
-    <div class="w-full md:w-1/2 lg:w-1/3 p-4">
-
-      <img src="path_to_project_image.jpg" alt="Project Name" class="rounded shadow-lg">
-
-      <h3 class="text-xl font-bold mt-2">Another Project</h3>
-
-      <p><!-- Brief description of the project --></p>
-
-    </div>
-
-    <!-- Add more as needed -->
-
-  </div>
-
-</section>
-
-
-
-<!-- Skills Section -->
-
-<section id="skills" class="bg-gray-100 py-8">
-
-  <h2 class="text-3xl font-bold mb-4">Skills</h2>
-
-  <div class="container mx-auto">
-
-    <ul class="list-disc pl-5">
-
-      <li>Programming Language 1</li>
-
-      <li>Programming Language 2</li>
-
-      <li>Software or Tool 1</li>
-
-      <li>Software or Tool 2</li>
-
-      <!-- Add more as needed -->
-
-    </ul>
-
-  </div>
-
-</section>
-
-
-
-<!-- Achievements Section -->
-
-<section id="achievements" class="container mx-auto p-6 md:p-12">
-
-  <h2 class="text-3xl font-bold mb-4">Achievements</h2>
-
-  <div class="flex flex-wrap">
-
-    <!-- Achievement 1 -->
-
-    <div class="w-full md:w-1/2 lg:w-1/3 p-4">
-
-      <img src="path_to_achievement_image.jpg" alt="Achievement Name" class="rounded shadow-lg">
-
-      <h3 class="text-xl font-bold mt-2">Achievement Name</h3>
-
-      <p><!-- Brief description of the achievement --></p>
-
-    </div>
-
-    <!-- Achievement 2 -->
-
-    <div class="w-full md:w-1/2 lg:w-1/3 p-4">
-
-      <img src="path_to_achievement_image.jpg" alt="Achievement Name" class="rounded shadow-lg">
-
-      <h3 class="text-xl font-bold mt-2">Another Achievement</h3>
-
-      <p><!-- Brief description of the achievement --></p>
-
-    </div>
-
-    <!-- Add more as needed -->
-
-  </div>
-
-</section>
-
-
-
-<!-- Smooth Scrolling Script -->
-
-<script src="prop.js"></script>
-
-
+<div class="commentbox"></div>
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>commentBox('5708360393424896-proj')</script>
+</div>
 
 </body>
-
 </html>
