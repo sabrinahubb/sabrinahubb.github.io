@@ -126,13 +126,21 @@
     </div>
     <div class="row">
         <div class="column column-text work-experience">
-            <h2>Audio</h2>
-            <p> The original reason I began studying electrical engineering is because I wanted to design synthesizers, speakers, DACs, amplifiers, and preamplifiers. Basically the whole audio chain. A lot of my fascination with the electrical world is rooted in my connection to sound, signals, and how they manifest themselves in the real world. Music is very real, and personal, connection to electricity and I desired a deeper understanding of the magic that goes into audio signal reproduction. This was my gateway into the world of electricity, electromagnetics, microelectronics, and power systems.</p>
+            <h2>Future</h2>
+            <p> This is the company I have currently signed a contract with for employment post graduation</p>
         </div>
         <div class="column">
-            <img src="../pictures/WhatsAppDiegoAudio.jpg" alt="Audio">
+            <img src="../pictures/rsm.png" alt="Audio">
         </div>
     </div>
+    <script src="../frontend/app.js"></script>
+    <script>
+        const accountStatus = localStorage.getItem("account");
+        if (accountStatus !== "logged") {
+            alert("You need to log in to access this page.");
+            window.location.href = "./backend/login/login.html";
+        }
+    </script>
 <!--    <div class="column">-->
 <!--        <img src="image3-placeholder.jpg" alt="Additional Information">-->
 <!--    </div>-->
@@ -140,7 +148,7 @@
 <div class="commentbox"></div>
 <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
 <script>commentBox('5708360393424896-proj')</script>
-</div>
+
 
 </body>
 </html>

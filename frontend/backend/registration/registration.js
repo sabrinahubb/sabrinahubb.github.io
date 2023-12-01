@@ -68,7 +68,7 @@ function submitRegisterFrom() {
     .then((data) => {
       document.getElementById("registrationForm").reset();
       localStorage.setItem("account", "logged");
-      window.location.href = "frontend/index.html";
+      window.location.href = "../frontend/index.html";
     })
     .catch((error) => console.error(error));
 }

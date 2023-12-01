@@ -1,5 +1,11 @@
+function toggleMenu() {
+  var navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("show");
+}
+
 const accountStatus = localStorage.getItem("account");
 const loginButtonsContainer = document.getElementById("loginButtons");
+const sabrinaLink = document.getElementById("sabrinaLink");
 
 if (accountStatus === "logged") {
   const logoutButton = document.createElement("button");
@@ -7,18 +13,29 @@ if (accountStatus === "logged") {
   logoutButton.className = "loginButton";
   logoutButton.addEventListener("click", function () {
     localStorage.removeItem("account");
-    window.location.href = "frontend/backend/login/login.html";
+    window.location.href = "./backend/login/login.html";
   });
   loginButtonsContainer.appendChild(logoutButton);
+
+  // Allow access to the Sabrina page
+  sabrinaLink.href = "./frontend/sabrina/index.html";
 } else {
   const loginButton = document.createElement("button");
   loginButton.textContent = "Login";
   loginButton.className = "loginButton";
   loginButton.addEventListener("click", function () {
-    window.location.href = "frontend/backend/login/login.html";
+    window.location.href = "./backend/login/login.html";
   });
   loginButtonsContainer.appendChild(loginButton);
+
+  // Prevent access to the Sabrina page for non-logged-in users
+  sabrinaLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert("You need to log in to access this page.");
+    window.location.href = "./backend/login/login.html";
+  });
 }
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
